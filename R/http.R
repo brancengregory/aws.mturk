@@ -18,8 +18,7 @@
 #' @importFrom jsonlite fromJSON toJSON
 #' @importFrom aws.signature signature_v4_auth locate_credentials
 #' @export
-mturkHTTP <-
-  function(
+mturkHTTP <- function(
     action,
     headers = list(),
     query = list(),
