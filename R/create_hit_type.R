@@ -11,20 +11,33 @@ create_hit_type <- function(
     auto_approval_delay,
     qualifications
   ) {
-  if(!is.character(id) | !is.integer(amount)) {
-    stop("`id` must be a character vector, and `amount` must be an integer")
-  }
 
-  unique_request_token <- NULL
+  rlang::check_required(
+    title,
+    description,
+    reward,
+    assignment_duration,
+    keywords
+  )
+
+  assertthat::assert_that(
+    assertthat::is.string(title),
+    assertthat::is.string(description),
+    assertthat::is.string(reward),
+    assertthat::is.number(assignment_duration),
+    assertthat::is.string(keywords)
+  )
 
   b <- list(
-    HITId = id,
-    NumberOfAdditionalAssignments = amount,
-    UniqueRequestToken = unique_request_token
+    Title = title,
+    Description = description,
+    Reward = reward,
+    AssignmentDurationInSeconds = assignment_duration,
+    QualificationRequirements = qualifications
   )
 
   res <- mturkHTTP(
-    action = "CreateAdditionalAssignmentsForHIT",
+    action = "CreateHITType",
     body = b
   )
 }
