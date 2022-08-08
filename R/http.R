@@ -45,7 +45,7 @@ mturkHTTP <- function(
       datetime = d_timestamp,
       region = region,
       service = "mturk",
-      verb = "GET",
+      verb = "POST",
       action = "/",
       query_args = query,
       canonical_headers = list(host = paste0("mturk-requester.",region,".amazonaws.com"),
@@ -70,9 +70,9 @@ mturkHTTP <- function(
 
     # execute request
     if (length(query)) {
-      r <- POST(url, H, query = query, body = body, encode = "json", ...)
+      r <- GET(url, H, query = query, body = body, encode = "json", ...)
     } else {
-      r <- POST(url, H, body = body, encode = "json", ...)
+      r <- GET(url, H, body = body, encode = "json", ...)
     }
 
     if (http_error(r)) {
