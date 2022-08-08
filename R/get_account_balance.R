@@ -6,17 +6,7 @@
 #'
 get_account_balance <- function() {
 
-  rlang::check_required(
-
-  )
-
-  assertthat::assert_that(
-
-  )
-
-  b <- list(
-
-  )
+  b <- list()
 
   res <- mturkHTTP(
     action = "GetAccountBalance",
