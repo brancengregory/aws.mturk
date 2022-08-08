@@ -19,7 +19,7 @@ get_assignment <- function(
   )
 
   b <- list(
-    AssignmentId
+    AssignmentId = id
   )
 
   res <- mturkHTTP(
