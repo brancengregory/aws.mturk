@@ -44,7 +44,7 @@ mturkHTTP <- function(
     Sig <- signature_v4_auth(
       datetime = d_timestamp,
       region = region,
-      service = "transcribe",
+      service = "mturk",
       verb = "POST",
       action = "/",
       query_args = query,
