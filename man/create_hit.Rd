@@ -25,7 +25,39 @@ create_hit(
 )
 }
 \arguments{
-\item{.token}{}
+\item{title}{The title of a HIT}
+
+\item{description}{A general description of the HIT}
+
+\item{layout_id}{The id of a pre-existing HIT design with placeholder values}
+
+\item{layout_parameters}{A structure for filling placeholder values in a HIT layout}
+
+\item{reward}{U.S. Dollar amount the Requester will pay a Worker for completing the HIT successfully}
+
+\item{assignment_duration}{The amount of time, in seconds, that a Worker has to complete the HIT after accepting it}
+
+\item{lifetime}{An amount of time, in seconds, after which the HIT is no longer available for users to accept}
+
+\item{keywords}{One or more words or phrases that describe the HIT}
+
+\item{max_assignments}{The number of times the HIT can be accepted and completed before the HIT becomes unavailable}
+
+\item{auto_approval_delay}{The number of seconds after an assignment for the HIT has been submitted, after which the assignment is considered Approved automatically unless the Requester explicitly rejects it}
+
+\item{qualifications}{Conditions that a Worker's Qualifications must meet before the Worker is allowed to accept and complete the HIT}
+
+\item{assignment_review_policy}{Policies that apply to the assignments under the HIT; you can specify for Mechanical Turk to take various actions based on the policy}
+
+\item{hit_review_policy}{Policies that apply to the HIT; you can specify for Mechanical Turk to take various actions based on the policy}
+
+\item{annotation}{An arbitrary data field that lets your application attach arbitrary data to the HIT for tracking purposes}
+
+\item{...}{Placeholder for future arguments}
+
+\item{.token}{A unique identifier for this request that allows you to retry the call on error without creating duplicate HITs}
+
+\item{question}{The data the person completing the HIT uses to produce the results}
 }
 \value{
 If successful, a HIT object.

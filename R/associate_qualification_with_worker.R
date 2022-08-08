@@ -1,6 +1,6 @@
 #' @title Associate Qualification with Worker
 #' @description Associates a qualification with a worker
-#' @return If successful, Empty body and no errors.
+#' @return If successful, empty body and no errors.
 #' @export
 associate_qualification_with_worker <- function(type, id, value, ..., .notify = F) {
   if(!is.character(id) | !is.character(id) | !is.integer(value) | !is.logical(.notify)) {
