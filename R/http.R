@@ -19,11 +19,11 @@
 #' @importFrom aws.signature signature_v4_auth locate_credentials
 #' @export
 mturkHTTP <- function(
-    action,
-    headers = list(),
-    query = list(),
+    # action,
+    # headers = list(),
+    # query = list(),
     body = NULL,
-    version = "v1",
+    # version = "v1",
     verbose = getOption("verbose", FALSE),
     region = Sys.getenv("AWS_DEFAULT_REGION", "us-east-1"),
     key = NULL,

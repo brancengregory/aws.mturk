@@ -12,13 +12,6 @@ list_hits <- function(
     max_results
 ) {
 
-  rlang::check_required(
-
-  )
-
-  assertthat::assert_that(
-  )
-
   b <- list(
     NextToken = next_token,
     MaxResults = max_results
