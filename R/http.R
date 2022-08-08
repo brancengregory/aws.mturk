@@ -45,7 +45,7 @@ mturkHTTP <- function(
       datetime = d_timestamp,
       region = region,
       service = "mturk",
-      verb = "POST",
+      verb = "GET",
       action = "/",
       query_args = query,
       canonical_headers = list(host = paste0("mturk-requester.",region,".amazonaws.com"),
