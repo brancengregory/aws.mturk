@@ -6,6 +6,13 @@
 \usage{
 accept_qualification_request(id, value, ...)
 }
+\arguments{
+\item{id}{The ID of the Qualification request, as returned by the ListQualificationRequests operation.}
+
+\item{value}{The value of the Qualification. You can omit this value if you are using the presence or absence of the Qualification as the basis for a HIT requirement.}
+
+\item{...}{Placeholder for future arguments}
+}
 \value{
 Empty body and no errors, if successful.
 }

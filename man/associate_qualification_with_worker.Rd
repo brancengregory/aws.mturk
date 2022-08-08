@@ -6,8 +6,19 @@
 \usage{
 associate_qualification_with_worker(type, id, value, ..., .notify = F)
 }
+\arguments{
+\item{type}{The id of the Qualification type to use for the assigned Qualification.}
+
+\item{id}{The id of the Worker to whom the Qualification is being assigned.}
+
+\item{value}{The value of the Qualification to assign}
+
+\item{...}{Placeholder for future arguments}
+
+\item{.notify}{Specifies whether to send a notification email message to the Worker saying that the qualification was assigned to the Worker.}
+}
 \value{
-If successful, Empty body and no errors.
+If successful, empty body and no errors.
 }
 \description{
 Associates a qualification with a worker

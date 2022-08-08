@@ -7,7 +7,7 @@
 create_hit(
   title,
   description,
-  questions,
+  question,
   layout_id,
   layout_parameters,
   reward,
@@ -28,6 +28,8 @@ create_hit(
 \item{title}{The title of a HIT}
 
 \item{description}{A general description of the HIT}
+
+\item{question}{The data the person completing the HIT uses to produce the results}
 
 \item{layout_id}{The id of a pre-existing HIT design with placeholder values}
 
@@ -56,8 +58,6 @@ create_hit(
 \item{...}{Placeholder for future arguments}
 
 \item{.token}{A unique identifier for this request that allows you to retry the call on error without creating duplicate HITs}
-
-\item{question}{The data the person completing the HIT uses to produce the results}
 }
 \value{
 If successful, a HIT object.

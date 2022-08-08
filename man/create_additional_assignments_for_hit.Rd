@@ -11,6 +11,15 @@ create_additional_assignments_for_hit(
   .token = rlang::missing_arg()
 )
 }
+\arguments{
+\item{id}{The id of the HIT to for which to request more assignments.}
+
+\item{amount}{The number of additional assignments to request for this HIT.}
+
+\item{...}{Placeholder for future arguments}
+
+\item{.token}{A unique identifier for this request, which allows you to retry the call on error without extending the HIT multiple times.}
+}
 \value{
 If successful, Empty body and no errors.
 }

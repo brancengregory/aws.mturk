@@ -1,7 +1,7 @@
 #'
 #' @title Delete HIT
 #' @description Deletes a HIT
-#' @return
+#' @return If successful, an empty body with no errors
 #' @export
 #'
 #' @param id The id of the HIT

@@ -4,10 +4,19 @@
 \alias{approve_assignment}
 \title{Approve Assignment}
 \usage{
-approve_assignment(id, message, ..., .override = F)
+approve_assignment(id, feedback, ..., .override = F)
+}
+\arguments{
+\item{id}{The id of the assignment. This parameter must correspond to a HIT created by the Requester.}
+
+\item{feedback}{A message for the Worker, which the Worker can see in the Status section of the web site.}
+
+\item{...}{Placeholder for future arguments}
+
+\item{.override}{A flag indicating whether you want to approve an assignment that was previously rejected.}
 }
 \value{
-If successful, Empty body and no errors.
+If successful, empty body and no errors.
 }
 \description{
 Approves an assignment

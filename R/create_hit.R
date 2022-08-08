@@ -25,7 +25,7 @@
 create_hit <- function(
     title,
     description,
-    questions,
+    question,
     layout_id,
     layout_parameters,
     reward,

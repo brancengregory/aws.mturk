@@ -4,15 +4,13 @@
 #' @return If successful, empty body and no errors
 #' @export
 #'
-#' @param id
-#' @param worker
-#' @param integer_value
-#' @param reason
+#' @param id The id of the Qualification type of the Qualification to be revoked.
+#' @param worker The id of the Worker who possesses the Qualification to be revoked.
+#' @param reason A text message that explains why the Qualification was revoked. The user who had the Qualification sees this message. IF a reason is not provided, the worker will not be notified.
 #'
 dissociate_qualification_from_worker <- function(
     id,
     worker,
-    integer_value,
     reason
 ) {
 
@@ -29,7 +27,6 @@ dissociate_qualification_from_worker <- function(
   b <- list(
     QualificationTypeId = id,
     WorkerId = worker,
-    IntegerValue = integer_value,
     Reason = reason
   )
 
